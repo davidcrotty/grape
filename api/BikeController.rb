@@ -5,8 +5,8 @@ module Controller
 
     resource :bike do
       desc 'Manages bikes'
-      get do
-        { :id => '1', :frame => 'shimano' }
+      get '/:bikeid' do
+        { id: params[:bikeid], frame: 'shimano' }
       end
     end
   end
