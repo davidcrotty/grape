@@ -1,0 +1,6 @@
+default:
+  host: 'localhost'
+  adapter: 'mysql2'
+  database: 'bike_vault_new'
+  username: root
+  password: root
