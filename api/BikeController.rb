@@ -14,6 +14,7 @@ module Controller
       end
 
       post do
+        @profile = Profile.create_with(locked: false).find_or_create_by(username: 'Andy', area: 'foo', biography: 'bar', rank: 'buzz')
         status 204
         body false
       end
